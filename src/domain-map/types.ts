@@ -5,7 +5,9 @@ export type Dataset = {
   name: string;
   description?: string;
   sensitivity: Sensitivity;
-  quality: number;
+  quality: number;       // already there
+  completeness: number;  // ✅ new attribute
+  accuracy: number;      // ✅ new attribute (you said “3 more attributes” – I added accuracy as a third)
   owner: string;
   tags?: string[];
   records?: number;
